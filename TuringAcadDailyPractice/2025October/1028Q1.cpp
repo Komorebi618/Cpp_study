@@ -3,14 +3,14 @@ using namespace std;
 
 int main() {
     int a = 1, b = 1, n;
-    cout << "Ê±¼ä½«Á÷ÊÅ¼¸¸öÔÂ£¿" << endl;
+    cout << "æ—¶é—´å°†æµé€å‡ ä¸ªæœˆï¼Ÿ" << endl;
     cin >> n;
     for (int i = 2; i < n; i++) {
         int temp = b;
         b = a + b;
         a = temp;
     }
-    cout << "¾­¹ý" << n << "¸öÔÂºó£¬ÄãÓÐÁË" << b << "¶ÔÍÃ×Ó" << endl;
+    cout << "ç»è¿‡" << n << "ä¸ªæœˆåŽï¼Œä½ æœ‰äº†" << b << "å¯¹å…”å­" << endl;
 
     return 0;
 }

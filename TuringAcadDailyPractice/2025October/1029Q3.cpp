@@ -3,7 +3,7 @@ using namespace std;
 
 int main() {
     int n, guess = 50, min = 1, max = 100, count = 1;
-    cout << "Òª²ÂµÄÊı×ÖÊÇ£º";
+    cout << "è¦çŒœçš„æ•°å­—æ˜¯ï¼š";
     cin >> n;
 
     while (true) {
@@ -13,10 +13,10 @@ int main() {
             return 0;
         }
         else if (guess > n) {
-            max = guess - 1; // ²Â´óÁË£¬·¶Î§×î´óÖµ±äĞ¡
+            max = guess - 1; // çŒœå¤§äº†ï¼ŒèŒƒå›´æœ€å¤§å€¼å˜å°
         }
         else {
-            min = guess + 1; // ²ÂĞ¡ÁË£¬·¶Î§×îĞ¡Öµ±ä´ó
+            min = guess + 1; // çŒœå°äº†ï¼ŒèŒƒå›´æœ€å°å€¼å˜å¤§
         }
         guess = (min + max) / 2;
         count++;
